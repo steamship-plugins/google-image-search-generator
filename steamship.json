@@ -1,33 +1,43 @@
 {
-  "author": "Steamship",
-  "entrypoint": "api.handler",
-  "handle": "google-image-search",
-  "description": "Returns images from Google Image Search via SerpAPI",
-  "public": true,
-  "type": "plugin",
-  "version": "0.0.1-rc.4",
-  "plugin": {
-    "isTrainable": false,
-    "transport": "jsonOverHttp",
-    "type": "tagger"
-  },
-  "configTemplate": {},
-  "steamshipRegistry": {
-    "tagline": "Google Image Search=",
-    "tagline2": "",
-    "usefulFor": "",
-    "videoUrl": null,
-    "githubUrl": "https://github.com/steamship-plugins/google-image-search-generator",
-    "demoUrl": null,
-    "blogUrl": null,
-    "jupyterUrl": "",
-    "authorName": "Steamship",
-    "authorEmail": "hello@steamship.com",
-    "authorTwitter": "@GetSteamship",
-    "authorUrl": "https://www.steamship.com/",
-    "tags": [
-      "SerpAPI",
-      "Google Image Search"
-    ]
-  }
+	"type": "plugin",
+	"handle": "google-image-search",
+	"version": "0.0.8",
+	"description": "Returns images from Google Image Search via SerpAPI",
+	"author": "Steamship",
+	"entrypoint": "api.handler",
+	"public": true,
+	"plugin": {
+		"isTrainable": false,
+		"transport": "jsonOverHttp",
+		"type": "generator"
+	},
+	"build_config": {
+		"ignore": []
+	},
+	"configTemplate": {
+		"serpapi_api_key": {
+			"type": "string",
+			"description": null,
+			"default": ""
+		}
+	},
+	"steamshipRegistry": {
+		"tagline": "Google Image Search=",
+		"tagline2": "",
+		"usefulFor": "",
+		"videoUrl": null,
+		"githubUrl": "https://github.com/steamship-plugins/google-image-search-generator",
+		"demoUrl": null,
+		"blogUrl": null,
+		"jupyterUrl": "",
+		"authorGithub": null,
+		"authorName": "Steamship",
+		"authorEmail": "hello@steamship.com",
+		"authorTwitter": "@GetSteamship",
+		"authorUrl": "https://www.steamship.com/",
+		"tags": [
+			"SerpAPI",
+			"Google Image Search"
+		]
+	}
 }
